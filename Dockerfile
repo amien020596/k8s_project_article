@@ -1,4 +1,4 @@
-FROM php:7.3.25-fpm-alpine3.12
+FROM php:7.4-fpm
 
 COPY composer.lock composer.json /usr/src/app/
 
