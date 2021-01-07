@@ -5,8 +5,8 @@ services:
       context: . # The path of the Dockerfile
     volumes:
       - .:/usr/src/app
-    depends_on:
-      - blog_db
+    # depends_on:
+    #   - blog_db
     working_dir: /usr/src/app
     environment:
       SERVICE_NAME: k8s-project-article
@@ -27,8 +27,8 @@ services:
       NGINX_ROOT: /usr/src/app/public
     ports:
       - "8000:80"
-    # depends_on:
-    #   - blog_app
+    depends_on:
+      - blog_app
     networks:
       - app_network
 
