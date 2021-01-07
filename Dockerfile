@@ -1,6 +1,6 @@
 FROM php:7.3.25-fpm-alpine3.12
 
-COPY composer.lock composer.json package.json /usr/src/app/
+COPY composer.lock composer.json /usr/src/app/
 
 ENV DOCKERIZE_VERSION 0.6.1
 
