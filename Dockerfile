@@ -51,6 +51,6 @@ RUN pwd
 
 RUN cd /var/www/html
 
-RUN ls 
+RUN ls --all
 
 # RUN composer install
