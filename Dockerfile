@@ -45,6 +45,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 RUN pwd
 
+RUN cd /var/www/html
+
 RUN ls --all
 
 RUN composer install
