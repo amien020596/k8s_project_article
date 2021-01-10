@@ -44,7 +44,7 @@ RUN apt-get update \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 COPY ./laravel.ini /usr/local/etc/php/conf.d/laravel.ini
-
-RUN cd /usr/src/app/
-
-RUN composer install
+RUN cp . /var/www/html
+RUN cd /var/www/html
+RUN composer install --no-dev --prefer-dist --optimize-autoloader && \
+  composer clear-cache
