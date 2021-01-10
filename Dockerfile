@@ -49,4 +49,4 @@ WORKDIR /usr/src/app
 
 RUN pwd
 
-RUN composer install
+RUN ls
