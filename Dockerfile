@@ -45,6 +45,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 RUN pwd
 
+RUN ls
+
 RUN composer install
 
 COPY ./laravel.ini /usr/local/etc/php/conf.d/laravel.ini
