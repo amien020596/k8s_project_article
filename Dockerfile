@@ -47,5 +47,5 @@ COPY ./laravel.ini /usr/local/etc/php/conf.d/laravel.ini
 
 WORKDIR /usr/src/app
 
-RUN composer install --no-dev --prefer-dist --optimize-autoloader && \
+RUN composer install && \
   composer clear-cache
