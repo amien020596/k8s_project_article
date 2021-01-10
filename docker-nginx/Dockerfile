@@ -1,7 +1,7 @@
 FROM nginx:latest
 
 ENV NGINX_ROOT /usr/src/app/public
-ENV NGINX_FPM_HOST 192.168.33.10
+ENV NGINX_FPM_HOST localhost
 ENV NGINX_FPM_PORT 9000
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
