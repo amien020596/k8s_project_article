@@ -47,5 +47,4 @@ COPY ./laravel.ini /usr/local/etc/php/conf.d/laravel.ini
 
 WORKDIR /usr/src/app
 
-RUN composer install && \
-  composer clear-cache
+RUN composer install
