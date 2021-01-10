@@ -47,4 +47,6 @@ COPY ./laravel.ini /usr/local/etc/php/conf.d/laravel.ini
 
 WORKDIR /usr/src/app
 
-RUN composer install
+RUN pwd
+
+# RUN composer install
